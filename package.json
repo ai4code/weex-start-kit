@@ -1,6 +1,6 @@
 {
-  "name": "weex-toutiao",
-  "description": "weex-toutiao",
+  "name": "weex-starter-kit",
+  "description": "weex-starter-kit",
   "version": "0.1.0",
   "private": true,
   "main": "index.js",
