@@ -57,6 +57,8 @@ npm run dev:web
 
 ```
 ![](https://github.com/Skt0Dragon/weex-start-kit/blob/master/screen/demo.png) 
+![](https://github.com/Skt0Dragon/weex-start-kit/blob/master/screen/demo2.png) 
+![](https://github.com/Skt0Dragon/weex-start-kit/blob/master/screen/demo3.png) 
 
 ```
 
