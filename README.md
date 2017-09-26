@@ -64,4 +64,5 @@ npm run dev:web
 
 ## notes
 
-You can config more babel, ESLint and PostCSS plugins in `webpack.config.js`.
+web预览加载外网图片，weex打包进行本地资源加载都可以.
+web预览修改->src->tools-index.js中资源路径即可
