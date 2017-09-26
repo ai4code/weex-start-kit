@@ -29,8 +29,30 @@ npm run build
 # build the two js bundles and watch file changes
 npm run dev:web
 
-```
+``` 
+浏览器打开 [http://localhost:8080](http://localhost:8080)
 
+## 项目结构
+
+```
+.
+│  .babelrc                           # server 用的 babel 配置  
+│  package.json                       # npm 包配置
+│  README.md                          # 
+│   
+├─build                               # 打包配置
+├─config                              # 项目和构建配置 
+├─dist                                # 打包结果目标目录
+├─src                                 # 前端代码根目录
+│  │  app.entry.js                    # weex应用入口
+│  │  web.entry.js                    # web端入口
+│  │  router.js                       # 路由配置
+│  │  store.js                        # 数据仓库
+│  ├─components                       # 共用的组件 
+└─static                              # 静态资源
+
+##demo
+![image](https://github.com/Skt0Dragon/weex-start-kit/screen/demo.png)
 ## notes
 
 You can config more babel, ESLint and PostCSS plugins in `webpack.config.js`.
