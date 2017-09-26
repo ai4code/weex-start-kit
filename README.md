@@ -62,7 +62,8 @@ npm run dev:web
 
 ```
 
-## notes
+## Remark
 
-web预览加载外网图片，weex打包进行本地资源加载都可以.
-web预览修改->src->tools-index.js中资源路径即可
+## web预览加载外网图片，weex打包进行本地资源加载都可以.
+## web预览修改->src->tools-index.js中资源路径即可
+## webstorm热更新把settings=>appearance=>system=>synchornization=>最后一项勾去掉
