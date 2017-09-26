@@ -51,9 +51,11 @@ npm run dev:web
 └─static                              # 静态资源
 
 
-```
+
 
 ##demo
+
+```
 ![](https://github.com/Skt0Dragon/weex-start-kit/blob/master/screen/demo.png) 
 
 ```
