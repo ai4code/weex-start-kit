@@ -1,6 +1,6 @@
-# weex-emptyTemplate
+# weex-starter-kit
 
-> weex-emptyTemplate
+> weex-starter-kit
 
 ## getting start
 
@@ -27,13 +27,8 @@ npm install
 npm run build
 
 # build the two js bundles and watch file changes
-npm run dev
+npm run dev:web
 
-# start a Web server at 8080 port
-npm run serve
-
-# start weex-devtool for debugging with native
-npm run debug
 ```
 
 ## notes
