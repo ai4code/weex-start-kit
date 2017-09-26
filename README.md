@@ -38,8 +38,7 @@ npm run dev:web
 .
 │  .babelrc                           # server 用的 babel 配置  
 │  package.json                       # npm 包配置
-│  README.md                          # 
-│   
+│  README.md                          #  
 ├─build                               # 打包配置
 ├─config                              # 项目和构建配置 
 ├─dist                                # 打包结果目标目录
@@ -51,8 +50,14 @@ npm run dev:web
 │  ├─components                       # 共用的组件 
 └─static                              # 静态资源
 
+
+```
+
 ##demo
-![image](https://github.com/Skt0Dragon/weex-start-kit/screen/demo.png)
+![](https://github.com/Skt0Dragon/weex-start-kit/blob/master/screen/demo.png) 
+
+```
+
 ## notes
 
 You can config more babel, ESLint and PostCSS plugins in `webpack.config.js`.
