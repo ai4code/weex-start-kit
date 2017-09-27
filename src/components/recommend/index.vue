@@ -6,6 +6,7 @@
         <rowItem :rowItem="rowItem2"></rowItem>
         <div class="clear"></div>
     </div>
+
 </template>
 
 <style scoped>
