@@ -1,10 +1,12 @@
 <template>
     <div class="container">
-        <listItem :listItem="listItem"></listItem>
-        <rowItem :rowItem="rowItem"></rowItem>
-        <listItem :listItem="listItem2"></listItem>
-        <rowItem :rowItem="rowItem2"></rowItem>
-        <div class="clear"></div>
+        <scroller append="tree" class="scroller">
+            <listItem :listItem="listItem"></listItem>
+            <rowItem :rowItem="rowItem"></rowItem>
+            <listItem :listItem="listItem2"></listItem>
+            <rowItem :rowItem="rowItem2"></rowItem>
+            <div class="clear"></div>
+        </scroller>
     </div>
 
 </template>
@@ -12,6 +14,10 @@
 <style scoped>
     .container{
         overflow: hidden;
+    }
+    .scroller{
+        flex: 1;
+        height:1200px;
     }
     .clear{
         height: 120px;

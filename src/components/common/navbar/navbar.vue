@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
     <image :src="msg"  class="navbar-msg"></image>
-    <image :src="logo" class="navbar-logo"></image>
+    <div class="navbar-div"><image :src="logo" class="navbar-logo"></image></div>
     <image :src="search" class="navbar-search"></image>
   </div>
 </template>
@@ -17,7 +17,11 @@
     top: 0;
     left: 0;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-div{
+    flex: 1;
     align-items: center;
   }
 
@@ -29,7 +33,6 @@
   .navbar-logo{
     width: 166px;
     height: 40px;
-    margin: 0 auto;
   }
 
   .navbar-search{

@@ -1,8 +1,6 @@
 <template>
     <div>
-        <scroller>
-            <text>西瓜视频</text>
-        </scroller>
+        <text>西瓜视频</text>
     </div>
 </template>
 

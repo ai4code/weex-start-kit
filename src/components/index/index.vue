@@ -1,8 +1,7 @@
 <template>
-    <div>
-        <wxTabbarTop
-                :tabItems="tabItems"
-                @tabBarOnClick="tabBarOnClick"></wxTabbarTop>
+    <div><wxTabbarTop
+            :tabItems="tabItems"
+            @tabBarOnClick="tabBarOnClick"></wxTabbarTop>
     </div>
 </template>
 

@@ -1,8 +1,6 @@
 <template>
     <div>
-        <scroller>
-            <text>未登录</text>
-        </scroller>
+        <text>未登录</text>
     </div>
 </template>
 

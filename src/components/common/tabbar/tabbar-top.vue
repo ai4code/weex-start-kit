@@ -1,11 +1,10 @@
 <template>
   <div class="wrapper">
-    <div class="content">
-      <component :is="currentView"
-                 transition="fade"
-                 transition-mode="out-in"></component>
-
-    </div>
+      <div class="content">
+          <component :is="currentView"
+                     transition="fade"
+                     transition-mode="out-in"></component>
+      </div>
     <div class="tabbar" append="tree">
       <scroller
               class="scroller"

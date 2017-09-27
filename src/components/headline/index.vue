@@ -1,8 +1,6 @@
 <template>
     <div>
-        <scroller>
-            <text>微头条</text>
-        </scroller>
+        <text>微头条</text>
     </div>
 </template>
 
