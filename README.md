@@ -53,15 +53,22 @@ npm run dev:web
 
 
 
-##demo
+##Web预览效果
 
 ```
 ![](https://github.com/Skt0Dragon/weex-start-kit/blob/master/screen/demo.png) 
 ![](https://github.com/Skt0Dragon/weex-start-kit/blob/master/screen/demo2.png) 
-![](https://github.com/Skt0Dragon/weex-start-kit/blob/master/screen/demo3.png) 
+![](https://github.com/Skt0Dragon/weex-start-kit/blob/master/screen/demo3.png)
 
 ```
+##真机预览效果
 
+```
+![](https://github.com/Skt0Dragon/weex-start-kit/blob/master/screen/demo4.png)
+![](https://github.com/Skt0Dragon/weex-start-kit/blob/master/screen/demo5.png)
+![](https://github.com/Skt0Dragon/weex-start-kit/blob/master/screen/demo6.png)
+
+```
 ## Remark
 
 ## web预览加载外网图片，weex打包进行本地资源加载都可以.
