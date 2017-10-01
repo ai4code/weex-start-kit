@@ -7,9 +7,99 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-touch-fullscreen" content="yes">
-  <meta name="format-detection" content="telephone=no, email=no">   
+  <meta name="format-detection" content="telephone=no, email=no">
+  <script src="./static/assets/config.js"></script>
+  <script src="./static/assets/url.js"></script>
+  <script src="./static/assets/qrcode.js"></script>
+  <style>
+    #qrcode{
+      z-index: 9999;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 43px;
+      opacity: .9;
+      background: #ddd;
+    }
+
+    #canvas{
+      width: 150px;
+      height: 150px;
+    }
+
+    .tip{
+      font-size: 20px;
+      color: red;
+    }
+
+    .cnsCls{
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .returnCls{
+      width: 90%;
+      margin-left: 5%;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid;
+      border-color: #0088fb;
+      font-size: 20px;
+      color: #0088fb;
+      margin-top: 30px;
+    }
+
+    .appShow{
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 38px;
+      font-size: 20px;
+      text-align: center;
+      background: #0088fb;
+      color: #fff;
+      opacity: .9;
+      z-index: 999;
+    }
+
+  </style>
 </head>
 <body>
   <div id="root"></div>
+  <div id="qrcode">
+    <div class="tip">手机安装Playground,通过二维码可以扫描预览效果</div>
+    <div class="tip">注意：手机端网络与pc网络必须是内网，只要保证ip能通就ok！</div>
+    <div class="cnsCls"><canvas id="canvas"></canvas></div>
+    <div onclick="qrcodeEv()" class="returnCls"><span>返回</span></div>
+  </div>
+  <div onclick="qrcodeEv()" class="appShow" id="appShow">真机预览</div>
+
+<script type="text/javascript">
+
+    
+    function init() {
+        var qrcode = document.getElementById('qrcode');
+        qrcode.style.display = 'none';
+    }
+
+    function qrcodeEv() {
+        var qrcode = document.getElementById('qrcode'),
+            appShow = document.getElementById('appShow');
+        if(qrcode.style.display == 'none') {
+            qrcode.style.display = '';
+            appShow.style.display = 'none';
+        }
+        else {
+            qrcode.style.display = 'none';
+            appShow.style.display = '';
+        }
+    }
+
+    init();
+</script>
 </body>
 </html>

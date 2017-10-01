@@ -68,14 +68,8 @@ devMiddleware.waitUntilValid(function () {
   console.log('> Listening at ' + uri + '\n')
 })
 
-module.exports = app.listen(port, function (err) {
-  if (err) {
-    console.log(err)
-    return
-  }
-
-  // when env is testing, don't need open it
-  /*if (autoOpenBrowser && process.env.NODE_ENV !== 'testing') {
-    opn(uri)
-  }*/
-})
+var http = require('http');
+var server = http.createServer(app);
+server.listen(port || 8080, '0.0.0.0', function () {
+    console.log("Express server listening on port " + port);
+});

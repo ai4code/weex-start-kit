@@ -50,8 +50,17 @@ npm run dev:web
 │  ├─components                       # 共用的组件 
 └─static                              # 静态资源
 
+##新增二维码通过PlayGround实时预览
+```
+![](https://github.com/Skt0Dragon/weex-start-kit/blob/master/screen/demo7.png)
+![](https://github.com/Skt0Dragon/weex-start-kit/blob/master/screen/demo8.png)
+![](https://github.com/Skt0Dragon/weex-start-kit/blob/master/screen/demo9.png)
 
-
+#注意
+#1: 二维码扫描手机端与pc必须是内网
+#2: 需要修改static/assets/config.js中ip地址
+#3: 运行 npm run build:weex
+#4: 将dist下app.weex.js拷贝到static跟目录下.运行npm run dev:web扫描二维码即可
 
 ##Web预览效果
 

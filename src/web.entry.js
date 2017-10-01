@@ -23,7 +23,15 @@ Object.keys(filters).forEach(key => {
 })
 
 Vue.mixin(mixins)
-
-export default new Vue(Vue.util.extend({ el: '#root', router, store }, Index));
+export default new Vue(Vue.util.extend({
+  el: '#root',
+  data: { val: url },
+  mounted: function () {
+      var qrcodedraw = new QRCodeLib.QRCodeDraw();
+      console.log(document.getElementById('canvas'), this.val)
+      qrcodedraw.draw(document.getElementById('canvas'), this.val, function () {})
+  },
+  router,
+  store }, Index));
 
 router.push('/')
